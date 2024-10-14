@@ -1,0 +1,82 @@
+2023-05-31 13:27:21.639 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2"
+
+2023-05-31 13:27:21.672 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "4"
+
+2023-05-31 13:27:21.673 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3"
+
+2023-05-31 13:36:31.857 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "109"
+
+2023-05-31 13:36:35.182 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "118"
+
+2023-05-31 13:36:35.183 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "117"
+
+2023-05-31 13:36:35.211 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "119"
+
+2023-05-31 13:36:35.223 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "120"
+
+2023-05-31 13:37:11.542 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "155"
+
+2023-05-31 13:37:11.542 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "156"
+
+2023-05-31 13:37:11.945 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "158"
+
+2023-05-31 13:37:11.946 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "157"
+
+2023-05-31 13:37:49.578 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "197"
+
+2023-05-31 13:37:50.784 [info] ERROR:pygls.protocol:Failed to handle request 202 textDocument/documentHighlight DocumentHighlightParams(text_document=TextDocumentIdentifier(uri='file:///workspace/bavarian-cristus-PP4/blog/views.py'), position=84:45, work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 355, in highlight
+    names = jedi_script.get_references(*jedi_lines, scope="file")
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 418, in get_references
+    return _references(**kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 412, in _references
+    names = find_references(self._get_module_context(), tree_name, scope == 'file')
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/references.py", line 147, in find_references
+    new = _dictionarize(_find_names(module_context, name_leaf))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/references.py", line 74, in _find_names
+    found_names = set(name.goto())
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/names.py", line 182, in goto
+    value_set = context.infer_node(to_infer[0])
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/context.py", line 224, in infer_node
+    return infer_node(self, node)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/syntax_tree.py", line 157, in infer_node
+    return _infer_node_if_inferred(context, element)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/syntax_tree.py", line 170, in _infer_node_if_inferred
+    return _infer_node_cached(context, element)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/cache.py", line 44, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/syntax_tree.py", line 175, in _infer_node_cached
+    return _infer_node(context, element)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/debug.py", line 81, in wrapper
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/syntax_tree.py", line 83, in wrapper
+    return func(context, *args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/syntax_tree.py", line 255, in _infer_node
+    return infer_or_test(context, element)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/syntax_tree.py", line 460, in infer_or_test
+    iterator = iter(or_test.children)
+AttributeError: 'Newline' object has no attribute 'children'
+
+2023-05-31 13:37:50.786 [info] [Error - 1:37:50 PM] Request textDocument/documentHighlight failed.
+2023-05-31 13:37:50.786 [info]   Message: AttributeError: 'Newline' object has no attribute 'children'
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 355, in highlight\n    names = jedi_script.get_references(*jedi_lines, scope="file")\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper\n    return func(self, line, column, *args, **kwargs)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 418, in get_references\n    return _references(**kwargs)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 412, in _references\n    names = find_references(self._get_module_context(), tree_name, scope == \'file\')\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/references.py", line 147, in find_references\n    new = _dictionarize(_find_names(module_context, name_leaf))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/references.py", line 74, in _find_names\n    found_names = set(name.goto())\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/names.py", line 182, in goto\n    value_set = context.infer_node(to_infer[0])\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/context.py", line 224, in infer_node\n    return infer_node(self, node)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/syntax_tree.py", line 157, in infer_node\n    return _infer_node_if_inferred(context, element)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/syntax_tree.py", line 170, in _infer_node_if_inferred\n    return _infer_node_cached(context, element)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/cache.py", line 44, in wrapper\n    rv = function(obj, *args, **kwargs)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/syntax_tree.py", line 175, in _infer_node_cached\n    return _infer_node(context, element)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/debug.py", line 81, in wrapper\n    return func(*args, **kwargs)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/syntax_tree.py", line 83, in wrapper\n    return func(context, *args, **kwargs)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/syntax_tree.py", line 255, in _infer_node\n    return infer_or_test(context, element)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/inference/syntax_tree.py", line 460, in infer_or_test\n    iterator = iter(or_test.children)\n']}
+2023-05-31 13:39:27.288 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "235"
+
+2023-05-31 13:39:27.290 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "236"
+
+2023-05-31 13:39:27.309 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "237"
+
+2023-05-31 13:40:31.050 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "252"
+
+2023-05-31 13:40:34.385 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "253"
+
+2023-05-31 13:40:36.608 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "258"
+

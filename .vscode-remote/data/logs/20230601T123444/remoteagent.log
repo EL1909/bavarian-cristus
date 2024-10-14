@@ -1,0 +1,21 @@
+2023-06-01 12:34:44.820 [info] 
+
+
+
+
+2023-06-01 12:34:44.850 [info] Extension host agent started.
+2023-06-01 12:34:45.073 [info] Extension 'github.vscode-pull-request-github' v0.64.0 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'github.vscode-pull-request-github@1.2.3'.
+2023-06-01 12:34:45.594 [info] Installing builtin extension 'gitpod.gitpod-theme'...
+2023-06-01 12:34:45.758 [info] Getting Manifest... gitpod.gitpod-theme
+2023-06-01 12:34:45.992 [info] Installing extension: gitpod.gitpod-theme
+2023-06-01 12:34:46.323 [info] Extension installed successfully: gitpod.gitpod-theme
+2023-06-01 12:34:46.324 [info] Extension 'gitpod.gitpod-theme' v0.0.2 was successfully installed.
+2023-06-01 12:34:46.325 [info] Installing extensions...
+2023-06-01 12:34:46.338 [info] Extension 'ms-python.python' v2023.8.0 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'ms-python.python@1.2.3'.
+2023-06-01 12:34:46.338 [info] Extension 'formulahendry.auto-close-tag' v0.5.14 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'formulahendry.auto-close-tag@1.2.3'.
+2023-06-01 12:34:46.339 [info] Extension 'eventyret.bootstrap-4-cdn-snippet' v1.13.0 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'eventyret.bootstrap-4-cdn-snippet@1.2.3'.
+2023-06-01 12:34:46.339 [info] Extension 'hookyqr.beautify' v1.4.11 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'hookyqr.beautify@1.2.3'.
+2023-06-01 12:34:46.339 [info] Extension 'matt-rudge.auto-open-preview-panel' v0.0.6 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'matt-rudge.auto-open-preview-panel@1.2.3'.
+2023-06-01 12:34:46.339 [info] Extension 'ms-toolsai.jupyter' v2023.3.100 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'ms-toolsai.jupyter@1.2.3'.
+2023-06-01 12:34:46.339 [info] Extension 'ms-toolsai.jupyter-keymap' v1.1.0 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'ms-toolsai.jupyter-keymap@1.2.3'.
+2023-06-01 12:34:46.339 [info] Extension 'ms-toolsai.jupyter-renderers' v1.0.15 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'ms-toolsai.jupyter-renderers@1.2.3'.

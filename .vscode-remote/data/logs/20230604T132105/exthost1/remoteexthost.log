@@ -1,0 +1,41 @@
+2023-06-04 13:21:15.035 [info] Extension host with pid 1025 started
+2023-06-04 13:21:15.039 [error] Error: EEXIST: file already exists, open '/workspace/.vscode-remote/data/User/workspaceStorage/-5c17c0d9/vscode.lock'
+2023-06-04 13:21:15.050 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/-5c17c0d9/vscode.lock': Could not acquire lock, checking if the file is stale.
+2023-06-04 13:21:15.051 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/-5c17c0d9/vscode.lock': The pid 1019 appears to be gone.
+2023-06-04 13:21:15.051 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/-5c17c0d9/vscode.lock': Deleting a stale lock.
+2023-06-04 13:21:15.086 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/-5c17c0d9/vscode.lock': Lock acquired.
+2023-06-04 13:21:15.607 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2023-06-04 13:21:15.607 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-06-04 13:21:16.609 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-06-04 13:21:16.609 [info] ExtensionService#_doActivateExtension gitpod.gitpod-web, startup: true, activationEvent: '*'
+2023-06-04 13:21:16.609 [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag, startup: true, activationEvent: '*'
+2023-06-04 13:21:16.610 [info] ExtensionService#_doActivateExtension HookyQR.beautify, startup: true, activationEvent: '*'
+2023-06-04 13:21:16.744 [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:requirements.txt'
+2023-06-04 13:21:18.864 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-06-04 13:21:18.864 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-06-04 13:21:26.612 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-06-04 13:21:26.613 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-06-04 13:21:26.613 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onStartupFinished', root cause: GitHub.vscode-pull-request-github
+2023-06-04 13:21:26.973 [info] Eager extensions activated
+2023-06-04 13:21:27.000 [info] ExtensionService#_doActivateExtension redhat.vscode-yaml, startup: false, activationEvent: 'onLanguage:yaml'
+2023-06-04 13:21:29.477 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2023-06-04 13:21:30.120 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-04 13:21:30.121 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-04 13:21:32.996 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-04 13:21:35.747 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-04 13:21:38.086 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-04 13:21:38.105 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-04 13:21:38.125 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-04 13:21:38.145 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-04 13:21:38.153 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-04 13:21:39.188 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-06-04 13:21:39.189 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-06-04 13:30:18.055 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onLanguage:python'
+2023-06-04 13:30:18.788 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter-renderers, startup: false, activationEvent: 'api', root cause: ms-toolsai.jupyter
+2023-06-04 14:56:52.835 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2023-06-04 15:20:50.043 [error] [ms-python.python] provider FAILED
+2023-06-04 15:20:50.043 [error] Error: ValueError: `column` parameter (1) is not in a valid range (0-0) for line 16 ('\n').
+	at /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/out/client/extension.js:2:1992179
+	at /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/out/client/extension.js:2:1992473
+	at Immediate.<anonymous> (/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/out/client/extension.js:2:1992835)
+	at processImmediate (node:internal/timers:466:21)

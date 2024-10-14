@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<!-- Main Text -->
+<div class="container-fluid">
+    <div class="row gold-banner">
+        <div id="gbtext" class="col">
+            <p id="gb1" class="display-6">Jesus is Everywhere,</p>
+            <h4 id="gb2">specially in Bavaria.</h4>
+        </div>
+    </div>
+</div>
+<br>
+<!-- PostCard Gallery -->
+<div id="gallery" class="container post-container">
+    {% for imagepost in imagepost_list %}
+    <div class="row post-row rounded mb-4 shadow-sm">
+        <div class="col-12 col-md-6  postcard-frame">
+            <div class="postcard-image">
+                <a href="{% url 'post_detail' imagepost.slug %}">
+                    <img src="{{ imagepost.image.url }}" alt="{{ imagepost.title }}">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 p-4">
+            <div class="row">
+                <div class="col col-sm-6">
+                    <p>Author:</p>
+                    <a href="{% url 'author_profile' imagepost.author %}"><h2 class="tohover">{{ imagepost.author }}</h2></a>
+                </div>
+                <div class="col d-inline col-sm-6 text-end">
+                    <p>Title:</p>
+                    <a href="{% url 'post_detail' imagepost.slug %}"><h2 class="tohover">{{ imagepost.title }}</h2></a>
+                </div>
+            </div>
+            <!-- Accordion -->
+            <div class="row align-items-center text-end d-none d-sm-block">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Description
+                            </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                {{ imagepost.text }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Location
+                            </button>
+                        </h3>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                {{ imagepost.location }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Trigger -->
+            <div id="sendPostCard">
+                <a href="#" id="open-postcard-modal" class="open-modal" data-bs-toggle="modal" data-bs-target="#postcardModal" 
+                   data-title="{{ imagepost.title }}" 
+                   data-slug="{{ imagepost.slug }}" 
+                   data-image="{{ imagepost.image.url }}" 
+                   data-description="{{ imagepost.text }}">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </a>                
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% include "print-modal.html" %}
+<!-- About -->
+<div id="about" class="row">
+    <div class="col-12 col-md-6">
+        {% include 'about.html' %}
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="post-list-wrapper">
+            <div class="post-list-slider">
+                {% for imagepost in imagepost_list %}
+                <div class="post-list-slide {% if forloop.first %}active{% endif %} rounded mb-4 shadow-sm">
+                    <div class="col-12">
+                        <div class="img-container">
+                            <a href="{% url 'post_detail' imagepost.slug %}">
+                                <img src="{{ imagepost.image.url }}" alt="{{ imagepost.title }}">
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="post-list-title" class="col-12">
+                        <div class="row">
+                            <div class="col-5">
+                                <small><p>Author:</p></small>
+                                <a href="{% url 'author_profile' imagepost.author %}">
+                                <h4>{{ imagepost.author }}</h4>
+                                </a>
+                            </div>
+                            <div class="col-7 d-inline text-end">
+                                <small><p>Title:</p></small>
+                                <a href="{% url 'post_detail' imagepost.slug %}">
+                                    <h4>{{ imagepost.title }}</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div>
+                <button id="postcard-gallery-btn">Post-Card Gallery</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,120 @@
+2023-06-04 21:49:06.824 [info] Test server listening.
+2023-06-04 21:49:06.824 [info] Python interpreter path: ~/.pyenv/versions/3.8.11/bin/python
+2023-06-04 21:49:06.824 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-04 21:49:06.967 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-04 21:49:06.967 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-04 21:49:06.967 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-04 21:49:06.967 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-04 21:49:06.967 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-04 21:49:07.070 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-04 21:49:07.070 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-04 21:49:07.752 [info] Starting Jedi language server for bavarian-cristus-PP4.
+2023-06-04 21:54:22.196 [info] > conda info --json
+2023-06-04 21:54:22.225 [info] Found: /bin/python2 --> /bin/python2.7
+2023-06-04 21:54:22.227 [info] Found: /bin/python2.7 --> /bin/python2.7
+2023-06-04 21:54:22.230 [info] Found: /bin/python3 --> /bin/python3.8
+2023-06-04 21:54:22.231 [info] Found: /bin/python3.8 --> /bin/python3.8
+2023-06-04 21:54:22.315 [info] > ~/.pyenv/versions/3.8.11/bin/python -I /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/interpreterInfo.py
+2023-06-04 21:54:22.316 [info] Found: /usr/bin/python2 --> /usr/bin/python2.7
+2023-06-04 21:54:22.316 [info] Found: /usr/bin/python2.7 --> /usr/bin/python2.7
+2023-06-04 21:54:22.333 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/linter.py -m pycodestyle ./bcristus/urls.py
+2023-06-04 21:54:22.333 [info] cwd: .
+2023-06-04 21:54:22.336 [info] Found: /usr/bin/python3 --> /usr/bin/python3.8
+2023-06-04 21:54:22.337 [info] Found: /usr/bin/python3.8 --> /usr/bin/python3.8
+2023-06-04 21:54:22.366 [info] > /bin/python2 -I /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/interpreterInfo.py
+2023-06-04 21:54:22.369 [warning] [Error: Command failed: /bin/python2 -I /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/interpreterInfo.py
+Unknown option: -I
+usage: /bin/python2 [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+	at ChildProcess.exithandler (node:child_process:400:12)
+	at ChildProcess.emit (node:events:513:28)
+	at maybeClose (node:internal/child_process:1093:16)
+	at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)] {
+  code: 2,
+  killed: false,
+  signal: null,
+  cmd: '/bin/python2 -I /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/interpreterInfo.py'
+}
+2023-06-04 21:54:22.369 [error] Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+2023-06-04 21:54:22.383 [info] > /bin/python2 /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/interpreterInfo.py
+2023-06-04 21:54:22.403 [info] > /bin/python3 -I /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/interpreterInfo.py
+2023-06-04 21:54:22.419 [info] > /usr/bin/python2 -I /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/interpreterInfo.py
+2023-06-04 21:54:22.423 [info] ##########Linting Output - pycodestyle##########
+
+2023-06-04 21:54:22.423 [info] 
+2023-06-04 21:54:22.427 [warning] [Error: Command failed: /usr/bin/python2 -I /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/interpreterInfo.py
+Unknown option: -I
+usage: /usr/bin/python2 [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+	at ChildProcess.exithandler (node:child_process:400:12)
+	at ChildProcess.emit (node:events:513:28)
+	at maybeClose (node:internal/child_process:1093:16)
+	at Socket.<anonymous> (node:internal/child_process:451:11)
+	at Socket.emit (node:events:513:28)
+	at Pipe.<anonymous> (node:net:757:14)] {
+  code: 2,
+  killed: false,
+  signal: null,
+  cmd: '/usr/bin/python2 -I /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/interpreterInfo.py'
+}
+2023-06-04 21:54:22.427 [error] Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+2023-06-04 21:54:22.438 [info] > /usr/bin/python2 /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/interpreterInfo.py
+2023-06-04 21:54:22.455 [info] > /usr/bin/python3 -I /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/interpreterInfo.py
+2023-06-04 21:58:53.272 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/linter.py -m pycodestyle ./blog/views.py
+2023-06-04 21:58:53.272 [info] cwd: .
+2023-06-04 21:58:53.370 [info] ##########Linting Output - pycodestyle##########
+
+2023-06-04 21:58:53.370 [info] 134,1,E,E302:expected 2 blank lines, found 1
+
+2023-06-04 22:01:17.554 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/linter.py -m pycodestyle ./bcristus/urls.py
+2023-06-04 22:01:17.554 [info] cwd: .
+2023-06-04 22:01:17.632 [info] ##########Linting Output - pycodestyle##########
+
+2023-06-04 22:01:17.632 [info] 36,1,W,W391:blank line at end of file
+
+2023-06-04 22:02:05.570 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/linter.py -m pycodestyle ./bcristus/urls.py
+2023-06-04 22:02:05.570 [info] cwd: .
+2023-06-04 22:02:05.645 [info] ##########Linting Output - pycodestyle##########
+
+2023-06-04 22:02:05.645 [info] 36,1,W,W391:blank line at end of file
+
+2023-06-04 22:04:30.059 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/linter.py -m pycodestyle ./bcristus/urls.py
+2023-06-04 22:04:30.059 [info] cwd: .
+2023-06-04 22:04:30.135 [info] ##########Linting Output - pycodestyle##########
+
+2023-06-04 22:04:30.135 [info] 
+2023-06-04 22:04:56.219 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/linter.py -m pycodestyle ./bcristus/settings.py
+2023-06-04 22:04:56.219 [info] cwd: .
+2023-06-04 22:04:56.305 [info] ##########Linting Output - pycodestyle##########
+
+2023-06-04 22:04:56.305 [info] 35,80,E,E501:line too long (117 > 79 characters)
+127,80,E,E501:line too long (91 > 79 characters)
+130,80,E,E501:line too long (81 > 79 characters)
+133,80,E,E501:line too long (82 > 79 characters)
+136,80,E,E501:line too long (83 > 79 characters)
+159,80,E,E501:line too long (80 > 79 characters)
+
+2023-06-04 22:05:15.377 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/linter.py -m pycodestyle ./bcristus/settings.py
+2023-06-04 22:05:15.377 [info] cwd: .
+2023-06-04 22:05:15.461 [info] ##########Linting Output - pycodestyle##########
+
+2023-06-04 22:05:15.461 [info] 35,80,E,E501:line too long (117 > 79 characters)
+127,80,E,E501:line too long (91 > 79 characters)
+130,80,E,E501:line too long (81 > 79 characters)
+133,80,E,E501:line too long (82 > 79 characters)
+136,80,E,E501:line too long (83 > 79 characters)
+159,80,E,E501:line too long (80 > 79 characters)
+
+2023-06-04 22:06:32.335 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/linter.py -m pycodestyle ./bcristus/settings.py
+2023-06-04 22:06:32.335 [info] cwd: .
+2023-06-04 22:06:32.423 [info] ##########Linting Output - pycodestyle##########
+
+2023-06-04 22:06:32.423 [info] 35,80,E,E501:line too long (117 > 79 characters)
+127,80,E,E501:line too long (91 > 79 characters)
+130,80,E,E501:line too long (81 > 79 characters)
+133,80,E,E501:line too long (82 > 79 characters)
+136,80,E,E501:line too long (83 > 79 characters)
+159,80,E,E501:line too long (80 > 79 characters)
+

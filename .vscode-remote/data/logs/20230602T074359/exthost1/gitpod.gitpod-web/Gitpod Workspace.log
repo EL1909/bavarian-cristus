@@ -1,0 +1,13 @@
+2023-06-02 07:44:10.763 [info] Log level: Info
+2023-06-02 07:44:10.763 [info] VSCODE_MACHINE_ID: 6a070ecc-900b-4e22-ad98-afb7df6e3e24
+2023-06-02 07:44:10.763 [info] VSCODE_SESSION_ID: 5aec2159-57f7-435d-a0bb-01bad280f1901685691843766
+2023-06-02 07:44:10.763 [info] VSCODE_VERSION: 1.78.2
+2023-06-02 07:44:10.763 [info] VSCODE_APP_NAME: Gitpod Code
+2023-06-02 07:44:10.763 [info] VSCODE_APP_HOST: Gitpod
+2023-06-02 07:44:10.763 [info] VSCODE_UI_KIND: web
+2023-06-02 07:44:10.764 [info] GITPOD_WORKSPACE_CONTEXT_URL: https://github.com/EL1909/bavarian-cristus-PP4
+2023-06-02 07:44:10.764 [info] GITPOD_INSTANCE_ID: 692437c4-1525-4953-a9a9-b9f6add8c8cb
+2023-06-02 07:44:10.764 [info] GITPOD_WORKSPACE_URL: https://el1909-bavariancristusp-2exs9z2egnt.ws-eu98.gitpod.io
+2023-06-02 07:44:10.764 [info] Gitpod Web 1150621
+2023-06-02 11:24:03.063 [error] adafa160-f4e6-4eec-a392-32ca8f41d9f6 terminal: listening failed: 13 INTERNAL: waitid: no child processes
+2023-06-02 11:24:03.066 [error] 79f337c2-ae6f-4cdf-8b62-00db07552ba3 terminal: listening failed: 13 INTERNAL: wait: no child processes

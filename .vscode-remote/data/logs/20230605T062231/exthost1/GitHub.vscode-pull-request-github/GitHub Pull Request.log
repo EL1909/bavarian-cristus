@@ -1,0 +1,22 @@
+2023-06-05 06:22:39.506 [warning] /home/gitpod/.ssh/config: ENOENT: no such file or directory, open '/home/gitpod/.ssh/config'
+2023-06-05 06:22:40.885 [info] Looking for git repository
+2023-06-05 06:22:40.885 [info] Found 0 repositories during activation
+2023-06-05 06:22:40.885 [info] Git repository found, initializing review manager and pr tree view.
+2023-06-05 06:22:40.892 [info] Registering git provider
+2023-06-05 06:22:40.892 [info] Review> Validate state in progress
+2023-06-05 06:22:40.892 [info] Review> Validating state...
+2023-06-05 06:22:40.978 [info] Found GitHub remote for folder /workspace/bavarian-cristus-PP4
+2023-06-05 06:22:41.878 [info] Repo state for file:///workspace/bavarian-cristus-PP4 changed.
+2023-06-05 06:22:41.878 [info] Repo file:///workspace/bavarian-cristus-PP4 has already been setup.
+2023-06-05 06:22:41.878 [info] Review> no matching pull request metadata found for current branch main
+2023-06-05 06:22:42.139 [info] Review> No matching pull request metadata found on GitHub for current branch main
+2023-06-05 07:00:19.153 [info] Review> Validate state in progress
+2023-06-05 07:00:19.154 [info] Review> Validating state...
+2023-06-05 07:00:19.268 [info] Found GitHub remote for folder /workspace/bavarian-cristus-PP4
+2023-06-05 07:00:19.344 [info] Review> no matching pull request metadata found for current branch main
+2023-06-05 07:00:19.582 [info] Review> No matching pull request metadata found on GitHub for current branch main
+2023-06-05 07:00:24.711 [info] Review> Validate state in progress
+2023-06-05 07:00:24.711 [info] Review> Validating state...
+2023-06-05 07:00:24.747 [info] Found GitHub remote for folder /workspace/bavarian-cristus-PP4
+2023-06-05 07:00:24.854 [info] Review> no matching pull request metadata found for current branch main
+2023-06-05 07:00:25.081 [info] Review> No matching pull request metadata found on GitHub for current branch main

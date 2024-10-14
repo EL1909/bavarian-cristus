@@ -1,0 +1,27 @@
+2023-06-02 07:43:59.285 [info] 
+
+
+
+
+2023-06-02 07:43:59.354 [info] Extension host agent started.
+2023-06-02 07:43:59.537 [info] Extension 'github.vscode-pull-request-github' v0.64.0 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'github.vscode-pull-request-github@1.2.3'.
+2023-06-02 07:44:00.071 [info] Installing builtin extension 'gitpod.gitpod-theme'...
+2023-06-02 07:44:00.240 [info] Getting Manifest... gitpod.gitpod-theme
+2023-06-02 07:44:00.503 [info] Installing extension: gitpod.gitpod-theme
+2023-06-02 07:44:01.098 [info] Extension installed successfully: gitpod.gitpod-theme
+2023-06-02 07:44:01.100 [info] Extension 'gitpod.gitpod-theme' v0.0.2 was successfully installed.
+2023-06-02 07:44:01.100 [info] Installing extensions...
+2023-06-02 07:44:01.141 [info] Extension 'ms-python.python' v2023.8.0 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'ms-python.python@1.2.3'.
+2023-06-02 07:44:01.141 [info] Extension 'formulahendry.auto-close-tag' v0.5.14 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'formulahendry.auto-close-tag@1.2.3'.
+2023-06-02 07:44:01.141 [info] Extension 'eventyret.bootstrap-4-cdn-snippet' v1.13.0 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'eventyret.bootstrap-4-cdn-snippet@1.2.3'.
+2023-06-02 07:44:01.141 [info] Extension 'hookyqr.beautify' v1.4.11 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'hookyqr.beautify@1.2.3'.
+2023-06-02 07:44:01.141 [info] Extension 'matt-rudge.auto-open-preview-panel' v0.0.6 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'matt-rudge.auto-open-preview-panel@1.2.3'.
+2023-06-02 07:44:01.141 [info] Extension 'ms-toolsai.jupyter' v2023.3.100 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'ms-toolsai.jupyter@1.2.3'.
+2023-06-02 07:44:01.141 [info] Extension 'ms-toolsai.jupyter-keymap' v1.1.0 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'ms-toolsai.jupyter-keymap@1.2.3'.
+2023-06-02 07:44:01.141 [info] Extension 'ms-toolsai.jupyter-renderers' v1.0.15 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'ms-toolsai.jupyter-renderers@1.2.3'.
+2023-06-02 07:44:01.427 [info] [192.168.19.72][f9ffe2b9][ManagementConnection] New connection established.
+2023-06-02 07:44:06.734 [warning] Skipping extension /ide/extensions/gitpod.gitpod-theme in favour of the builtin extension /ide/extensions/gitpod.gitpod-theme.
+2023-06-02 07:44:06.802 [info] [192.168.19.72][b5f751f5][ExtensionHostConnection] New connection established.
+2023-06-02 07:44:06.811 [info] [192.168.19.72][b5f751f5][ExtensionHostConnection] <1019> Launched Extension Host Process.
+2023-06-02 11:04:07.555 [info] [192.168.181.10][b5f751f5][ExtensionHostConnection] The client has reconnected.
+2023-06-02 11:04:07.806 [info] [192.168.20.138][f9ffe2b9][ManagementConnection] The client has reconnected.

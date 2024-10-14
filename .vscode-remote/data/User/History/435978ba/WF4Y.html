@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load cloudinary %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 p-4 align-items-center">
+      <h2>In this website we all can post our “Bavarian Christus” images.</h2>
+      <br>
+      <p>You as a collaborator can upload your photo and the location of the statue.</p>
+      <br>
+      <p>Eventually, we can create visiting routes for those who, like me, are interested in Christ images.</p> 
+    </div>
+    <div class="col-md-6 p-4" id="backend_upload">
+      <h2>Upload Here <i class="fa-sharp fa-solid fa-camera-retro"></i></h2>
+      <form method="post" class="form-group" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.title }}
+        {{ form.user }}
+        {{ form.location }}
+        {{ form.text }}
+        {{ form.image }}
+        <button type="submit" class="btn btn-secondary">Upload</button>
+      </form>      
+    </div>    
+  </div>
+</div>
+
+{% endblock %}
+

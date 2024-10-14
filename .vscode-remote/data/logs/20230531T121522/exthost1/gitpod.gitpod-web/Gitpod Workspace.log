@@ -1,0 +1,16 @@
+2023-05-31 12:15:28.030 [info] Log level: Info
+2023-05-31 12:15:28.030 [info] VSCODE_MACHINE_ID: 4206903b-0e43-43c2-a9d6-628560f5a278
+2023-05-31 12:15:28.030 [info] VSCODE_SESSION_ID: 3e984b85-f93d-4e89-b0ae-69c2bc7b56351685535322717
+2023-05-31 12:15:28.030 [info] VSCODE_VERSION: 1.78.2
+2023-05-31 12:15:28.030 [info] VSCODE_APP_NAME: Gitpod Code
+2023-05-31 12:15:28.030 [info] VSCODE_APP_HOST: Gitpod
+2023-05-31 12:15:28.030 [info] VSCODE_UI_KIND: web
+2023-05-31 12:15:28.030 [info] GITPOD_WORKSPACE_CONTEXT_URL: https://github.com/EL1909/bavarian-cristus-PP4
+2023-05-31 12:15:28.030 [info] GITPOD_INSTANCE_ID: 25638022-6e9c-4aa7-b658-2723e1f95dc3
+2023-05-31 12:15:28.030 [info] GITPOD_WORKSPACE_URL: https://el1909-bavariancristusp-2exs9z2egnt.ws-eu98.gitpod.io
+2023-05-31 12:15:28.030 [info] Gitpod Web 1150621
+2023-05-31 12:49:02.051 [error] 116f4b26-44ed-4dea-bc3f-0808c5d69434 terminal: listening failed: 13 INTERNAL: wait: no child processes
+2023-05-31 12:49:03.051 [error] cannot maintain connection to supervisor 13 INTERNAL: closed
+2023-05-31 12:49:04.053 [error] cannot maintain connection to supervisor 13 INTERNAL: closed
+2023-05-31 12:49:05.054 [error] cannot maintain connection to supervisor 13 INTERNAL: closed
+2023-05-31 12:49:06.056 [error] cannot maintain connection to supervisor 13 INTERNAL: closed

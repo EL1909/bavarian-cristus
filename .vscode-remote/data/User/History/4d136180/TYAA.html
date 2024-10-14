@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+
+{% load cloudinary %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-12 p-4">
+    <h2>Create a Post</h2>
+  </div>
+</div>
+
+<div class="row p-4">
+    <div class="col-6" id='backend_upload'>
+        <h2>Upload Here <i class="fa-sharp fa-solid fa-camera-retro"></i></h2>
+          <form action="{% url 'photo_album.views.upload' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ backend_form }}
+        <input type="submit" value="Upload">
+        </form>
+    </div>
+  <div class="col-6">
+    <div class="p-4">
+      <h2>In this website we all can post our “Bavarian Christus” images.</h2>
+      <br>
+      <p> You as colaborator can upload your photo and location of the statue.</p>
+      <br>
+      <p>Eventually we can create visiting routes for those who like me, are interested in Christ images.</p> 
+  </div>
+  </div>
+</div>
+<hr>
+{% endblock %}

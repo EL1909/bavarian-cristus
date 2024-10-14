@@ -1,0 +1,30 @@
+[300ns] Shutting down all processes 
+[377.11µs] Terminating process supervisor with PID 35 (state: S, cmdlind: [supervisor run] <nil>). 
+[15.042199ms] Terminating main process errored: wait: no child processes 
+[15.518389ms] Terminating process postgres with PID 938 (state: S, cmdlind: [postgres: background writer   ] <nil>). 
+[15.578619ms] Terminating process bash with PID 771 (state: S, cmdlind: [/bin/bash] <nil>). 
+[15.529829ms] Terminating process sleep with PID 2398 (state: S, cmdlind: [sleep 300] <nil>). 
+[15.629089ms] Terminating process postgres with PID 934 (state: S, cmdlind: [/usr/lib/postgresql/12/bin/postgres -D /workspace/.pgsql/data -k /home/gitpod/.pg_ctl/sockets] <nil>). 
+[15.639479ms] Terminating main process errored: waitid: no child processes 
+[15.670119ms] Terminating process postgres with PID 937 (state: S, cmdlind: [postgres: checkpointer   ] <nil>). 
+[15.72005ms] Terminating process postgres with PID 939 (state: S, cmdlind: [postgres: walwriter   ] <nil>). 
+[15.692709ms] Terminating main process errored: waitid: no child processes 
+[15.74351ms] Terminating process postgres with PID 942 (state: S, cmdlind: [postgres: logical replication launcher   ] <nil>). 
+[15.77343ms] Terminating main process errored: waitid: no child processes 
+[15.777119ms] Terminating main process errored: waitid: no child processes 
+[15.631129ms] Terminating main process errored: waitid: no child processes 
+[15.82273ms] Terminating process postgres with PID 941 (state: S, cmdlind: [postgres: stats collector   ] <nil>). 
+[15.83907ms] Terminating process node with PID 66 (state: R, cmdlind: [/ide/node /ide/out/server-main.js --log=info --install-builtin-extension gitpod.gitpod-theme --install-builtin-extension github.vscode-pull-request-github --install-extension ms-python.python --install-extension formulahendry.auto-close-tag --install-extension eventyret.bootstrap-4-cdn-snippet --install-extension hookyqr.beautify --install-extension matt-rudge.auto-open-preview-panel --install-extension ms-toolsai.jupyter --install-extension ms-toolsai.jupyter-keymap --install-extension ms-toolsai.jupyter-renderers --port 23000 --host 0.0.0.0 --without-connection-token --server-data-dir /workspace/.vscode-remote --do-not-sync --start-server] <nil>). 
+[15.852219ms] Terminating main process errored: waitid: no child processes 
+[15.856399ms] Terminating process node with PID 77 (state: S, cmdlind: [/ide/node /ide/out/bootstrap-fork --type=ptyHost --logsPath /workspace/.vscode-remote/data/logs/20230605T062231] <nil>). 
+[15.874559ms] Terminating process bash with PID 1888 (state: S, cmdlind: [bash /usr/local/lib/heroku/bin/heroku update --autoupdate] <nil>). 
+[15.894679ms] Terminating main process errored: waitid: no child processes 
+[15.89745ms] Terminating process node with PID 1895 (state: S, cmdlind: [/usr/local/lib/heroku/bin/node /usr/local/lib/heroku/bin/run update --autoupdate] <nil>). 
+[15.94609ms] Terminating main process errored: waitid: no child processes 
+[15.95185ms] Terminating process postgres with PID 940 (state: S, cmdlind: [postgres: autovacuum launcher   ] <nil>). 
+[16.10497ms] Terminating main process errored: waitid: no child processes 
+[16.441699ms] Terminating main process errored: waitid: no child processes 
+[16.442159ms] Terminating main process errored: waitid: no child processes 
+[39.890959ms] Terminating main process errored: waitid: no child processes 
+[42.589719ms] Terminating main process errored: waitid: no child processes 
+[46.006089ms] Finished shutting down all processes. 

@@ -1,0 +1,195 @@
+2023-06-04 13:30:20.151 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2"
+
+2023-06-04 13:36:09.455 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "8"
+
+2023-06-04 13:36:09.635 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "9"
+
+2023-06-04 13:36:09.821 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "11"
+
+2023-06-04 13:36:09.931 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "12"
+
+2023-06-04 13:53:16.872 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "42"
+
+2023-06-04 13:53:20.499 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "52"
+
+2023-06-04 13:54:55.380 [info] Exception in thread Thread-40:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/bavarian-cristus-PP4/blog/forms.py", line 15
+    class CommentForm(ModelForm):
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-06-04 13:55:19.093 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "114"
+
+2023-06-04 13:55:20.458 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "115"
+
+2023-06-04 13:55:42.619 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "150"
+
+2023-06-04 13:55:55.010 [info] Exception in thread Thread-78:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/bavarian-cristus-PP4/blog/forms.py", line 17
+    class CommentForm(ModelForm):
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-06-04 13:55:58.262 [info] Exception in thread Thread-79:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/bavarian-cristus-PP4/blog/forms.py", line 18
+    class CommentForm(ModelForm):
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-06-04 14:03:32.525 [info] Exception in thread Thread-176:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/bavarian-cristus-PP4/blog/forms.py", line 20
+    class CommentForm(ModelForm):
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-06-04 14:06:49.350 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "381"
+
+2023-06-04 14:06:53.668 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "386"
+
+2023-06-04 14:34:32.539 [info] Exception in thread Thread-283:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/bavarian-cristus-PP4/blog/forms.py", line 25
+    class CommentForm(ModelForm):
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-06-04 14:35:29.590 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "556"
+
+2023-06-04 15:03:12.495 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "705"
+
+2023-06-04 15:03:16.696 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "710"
+
+2023-06-04 15:03:19.967 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "716"
+
+2023-06-04 15:03:21.043 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "719"
+
+2023-06-04 15:20:50.041 [info] ERROR:pygls.protocol:Failed to handle request 779 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///workspace/bavarian-cristus-PP4/blog/forms.py'), position=15:0, work_done_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover
+    jedi_script.help(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper
+    raise ValueError('`column` parameter (%d) is not in a valid range '
+ValueError: `column` parameter (1) is not in a valid range (0-0) for line 16 ('\n').
+
+2023-06-04 15:20:50.043 [info] [Error - 3:20:50 PM] Request textDocument/hover failed.
+2023-06-04 15:20:50.043 [info]   Message: ValueError: `column` parameter (1) is not in a valid range (0-0) for line 16 ('\n').
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover\n    jedi_script.help(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.8.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper\n    raise ValueError(\'`column` parameter (%d) is not in a valid range \'\n']}
+2023-06-04 15:28:16.225 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "790"
+
+2023-06-04 15:55:38.755 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "851"
+
+2023-06-04 16:01:41.911 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "895"
+
+2023-06-04 16:01:45.526 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "902"
+
+2023-06-04 16:01:46.149 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "903"
+

@@ -1,0 +1,158 @@
+/* Imported fonts from google Cinzel Decorative and Roboto*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Roboto&display=swap');
+
+/*---------------------------------------------- Body*/
+
+body {
+    background-color: #c39b72b7;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    font-family: roboto, sans-serif ;
+}
+
+h2  {
+    display: inline-block;
+    font-size: 120%;
+    color:rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    font-family: cinzel decorative, sans-serif;
+}
+/*-------------------------------------------- Header*/
+
+.logo {
+    background-color: rgba(86, 7, 12, 0.8);
+    color: antiquewhite;
+    height: 100px;
+    font-family: Cinzel Decorative, sans-serif;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.logo a {
+    color: antiquewhite;
+}
+
+.navbar {
+    color: antiquewhite;
+}
+
+/*------------------------------------------ MainText*/
+.maintext {
+    background-color: #ad8762;
+    color: antiquewhite;
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    text-align: right;
+}
+
+/*-------------------------------------------- Footer*/
+
+footer {
+    background-color: rgba(86, 7, 12, 0.8);
+    height: 100px;
+    margin-top: auto;
+}
+
+footer li a {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 5px;
+}
+
+footer i:hover {
+    color: rgba(245, 221, 7, 0.86);
+    transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+}   
+
+/*---------------------------------- Image container*/
+
+.frame {
+    border: 5px solid #ad8762;
+    background:rgba(86, 7, 12, 0.8);
+    margin: 2px;
+    padding: 3px; 
+  }
+  
+img {
+    width: 100%;
+    height: 100%;
+  }
+
+/*---------------------------- Post Information Box*/
+
+.post-info  {
+    display: inline-block;
+    max-height: 100px;
+}
+
+.tohover :hover {
+    background: rgba(86, 7, 12, 0.8);
+    color: #fff;
+}
+
+/*------------------------------------ Comments Box*/
+
+.comments   {
+    max-height: 300px;
+}
+
+/*-------------------------------------- Post Card */
+
+.accordion   {
+    align-content: flex-end;
+}
+
+/*---------------------------------------- Buttons */
+
+.btn    {
+    background-color: rgba(86, 7, 12, 0.8);
+    color: antiquewhite;
+}
+
+.btn-like   {
+    background-color: antiquewhite;
+    color: rgb(145, 20, 20);
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color:antiquewhite;
+}
+
+/*---------------------------------------- Alerts */
+
+.alert-fixed {
+    position:static; 
+    top: 0px; 
+    left: 0px; 
+    width: 100%;
+    z-index: 9; 
+    border-radius:0px
+}
+
+/*--------------------------------- Media Queries */
+
+@media screen and (max-width: 575px)    {
+
+    .maintext   {
+        text-align: left;
+    }
+
+    .logo li   {
+        color: rgba(86, 7, 12, 0.5);
+        background-color: #ad8762ba;
+        text-decoration: 5px underline;
+        text-transform: uppercase;
+        width: auto;
+    }
+
+}

@@ -1,0 +1,7 @@
+/* Imported fonts from google Noto and Dosis*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Noto+Sans+KR&display=swap');
+
+
+body {
+    background-color: red;
+}

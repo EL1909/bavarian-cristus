@@ -1,0 +1,16 @@
+Gitpod Code (1.78.2, el1909-bavariancristusp-2exs9z2egnt.ws-eu98.gitpod.io, Gitpod)
+Jupyter Extension Version: 2023.3.100.
+Python Extension Version: 2023.8.0.
+Workspace folder /workspace/bavarian-cristus-PP4
+info 13:27:18.978: LSP Notebooks experiment is enabled
+info 13:27:19.091: Process Execution: > jupyter notebook --version
+> jupyter notebook --version
+info 13:27:19.103: Process Execution: > jupyter lab --version
+> jupyter lab --version
+warn 13:27:21.121: Failed to get activated env vars with python /home/gitpod/.pyenv/versions/3.8.11/bin/python in 2109ms
+error 13:27:21.122: Unable to determine site packages path for python /home/gitpod/.pyenv/versions/3.8.11/bin/python (Pyenv)
+info 13:27:21.138: Process Execution: > ~/.pyenv/versions/3.8.11/bin/python -m pip list
+> ~/.pyenv/versions/3.8.11/bin/python -m pip list
+info 14:58:31.768: Shutting down notebooks for 80f88dfd-1bea-474d-8007-2d65fbd71956
+info 14:58:31.768: Disposing HostJupyterExecution 1cb16454-26fa-462d-86b0-f434905333d5
+info 14:58:31.769: Disposing HostJupyterExecution 1cb16454-26fa-462d-86b0-f434905333d5

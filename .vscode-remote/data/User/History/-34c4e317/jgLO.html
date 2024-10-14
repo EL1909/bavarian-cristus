@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container">
+    <div class="col p-4">
+        <h2>Edit Post</h2>
+        <form method="post" class="form-group" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form | crispy }}
+        <label for="id_image">Image:</label>
+        <input type="file" id="id_image" name="image">
+        <button type="submit" class="btn btn-secondary">Save Changes</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

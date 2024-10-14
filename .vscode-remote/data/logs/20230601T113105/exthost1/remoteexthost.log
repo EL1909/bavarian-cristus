@@ -1,0 +1,32 @@
+2023-06-01 11:31:08.407 [info] Extension host with pid 1023 started
+2023-06-01 11:31:08.411 [error] Error: EEXIST: file already exists, open '/workspace/.vscode-remote/data/User/workspaceStorage/-5c17c0d9/vscode.lock'
+2023-06-01 11:31:08.419 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/-5c17c0d9/vscode.lock': Could not acquire lock, checking if the file is stale.
+2023-06-01 11:31:08.420 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/-5c17c0d9/vscode.lock': The pid 12489 appears to be gone.
+2023-06-01 11:31:08.420 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/-5c17c0d9/vscode.lock': Deleting a stale lock.
+2023-06-01 11:31:08.457 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/-5c17c0d9/vscode.lock': Lock acquired.
+2023-06-01 11:31:08.499 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-06-01 11:31:08.500 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
+2023-06-01 11:31:08.500 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onLanguage:python'
+2023-06-01 11:31:09.207 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter-renderers, startup: false, activationEvent: 'api', root cause: ms-toolsai.jupyter
+2023-06-01 11:31:09.501 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-06-01 11:31:09.502 [info] ExtensionService#_doActivateExtension gitpod.gitpod-web, startup: true, activationEvent: '*'
+2023-06-01 11:31:09.502 [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag, startup: true, activationEvent: '*'
+2023-06-01 11:31:09.502 [info] ExtensionService#_doActivateExtension HookyQR.beautify, startup: true, activationEvent: '*'
+2023-06-01 11:31:09.725 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-06-01 11:31:09.725 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-06-01 11:31:10.585 [info] Eager extensions activated
+2023-06-01 11:31:10.585 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-06-01 11:31:10.586 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-06-01 11:31:10.586 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onStartupFinished', root cause: GitHub.vscode-pull-request-github
+2023-06-01 11:31:11.154 [info] ExtensionService#_doActivateExtension redhat.vscode-yaml, startup: false, activationEvent: 'onLanguage:yaml'
+2023-06-01 11:31:11.297 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2023-06-01 11:31:12.231 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-01 11:31:12.232 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-01 11:31:18.679 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-01 11:31:19.590 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-01 11:31:20.307 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-01 11:31:21.224 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-01 11:31:21.284 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-01 11:31:21.433 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-06-01 11:31:24.165 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-06-01 11:31:24.166 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'

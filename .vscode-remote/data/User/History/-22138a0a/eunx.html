@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="col p-4">
+        <h2>Confirm deletion</h2>
+        <p>Are you sure you want to delete "{{ item.title }}"?</p>
+        <form method="post" action="{% url 'delete' item.slug %}">
+            {% csrf_token %}
+            <input type="hidden" name="confirm_delete" value="1">
+            <button class="btn btn-secondary" id="confirm_delete" type="submit">Yes, delete it</button>
+            <a class="btn btn-secondary" href="{% url 'profile' %}">Cancel</a>
+        </form>
+    </div>
+</div>
+{% endblock %}
