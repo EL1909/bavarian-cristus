@@ -1,48 +1,74 @@
-from django.shortcuts import render, redirect, get_object_or_404, reverse
-from django.views.generic import View, DetailView, ListView
-from django.http import HttpResponse, HttpResponseRedirect
+from django.conf import settings
+from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
-from django.urls import reverse_lazy
-from cloudinary.forms import cl_init_js_callbacks
-from django.utils.text import slugify
-from django.template.defaultfilters import slugify
-from django.contrib import messages
-from .models import ImagePost
-from .forms import CommentForm, ImagePostForm
-import random
-import string
-import cloudinary
-
-
-from django.views import View
 from django.http import JsonResponse
-from django.conf import settings
+from django.shortcuts import render, redirect, get_object_or_404
+from django.template.defaultfilters import slugify
+from django.utils.text import slugify
+from django.views.generic import View, DetailView, ListView
+from .models import ImagePost, Payment
+from .forms import CommentForm, ImagePostForm
+import cloudinary
+import json
 import requests
+
+
 
 class sendPostcardView(View):
     def post(self, request, *args, **kwargs):
-        recipient_name = request.POST.get('name')
-        recipient_address = request.POST.get('address')
-        image_url = request.POST.get('image_url')  # URL of the image for the postcard
-
+        # Parse the incoming JSON data
+        data = json.loads(request.body)
+        
+        # Extracting data from the request
+        from_name = data.get('from_name')
+        from_street1 = data.get('from_street1')
+        from_street2 = data.get('from_street2')
+        from_city = data.get('from_city')
+        from_state = data.get('from_state')
+        from_postcode = data.get('from_postcode')
+        from_country = data.get('from_country')
+        to_name = data.get('to_name')
+        to_street1 = data.get('to_street1')
+        to_street2 = data.get('to_street2')
+        to_city = data.get('to_city')
+        to_state = data.get('to_state')
+        to_postcode = data.get('to_postcode')
+        to_country = data.get('to_country')
+        image_url = data.get('image_url')  # URL of the image for the postcard
+        message = data.get('message')  # Message to be printed on the postcard
+       
         # ClickSend API endpoint and credentials
         url = 'https://rest.clicksend.com/v3/post/postcards/send'
         auth = (settings.CLICKSEND_USERNAME, settings.CLICKSEND_API_KEY)
 
-        # Prepare the payload
+        # Prepare the payload with the extracted data
         payload = {
             "messages": [
                 {
                     "file_url": image_url,
                     "recipients": [
                         {
-                            "name": recipient_name,
-                            "address": recipient_address
+                            "name": to_name,
+                            "address_line_1": to_street1,
+                            "address_line_2": to_street2,
+                            "city": to_city,
+                            "state": to_state,
+                            "postal_code": to_postcode,
+                            "country": to_country
                         }
                     ],
-                    "template_used": True
+                    "sender": {
+                        "name": from_name,
+                        "address_line_1": from_street1,
+                        "address_line_2": from_street2,
+                        "city": from_city,
+                        "state": from_state,
+                        "postal_code": from_postcode,
+                        "country": from_country
+                    },
+                    "message": message  # Optional: message to be printed on the postcard
                 }
             ]
         }
@@ -59,12 +85,41 @@ class sendPostcardView(View):
             return JsonResponse({'status': 'error', 'message': response.json()})
 
 
+class handlePaymentView(View):
+    def post(self, request, *args, **kwargs):
+        data = json.loads(request.body)
+        order_id = data.get('orderId')
+        status = data.get('status', 'pending')
+        slug = data.get('slug')
+        payer = data.get('payer')
 
+        print("Received orderId:", order_id)
+        if not order_id:
+            return JsonResponse({'error': 'Order ID is missing'}, status=400)
+                
+        print("Received payer:", data.get('payer'))
+        # Fallback to signed-in user for payer
+        if not payer:
+            payer = request.user if request.user.is_authenticated else None
 
+        # Get the associated post using the slug
+        post = get_object_or_404(ImagePost, slug=slug)
 
+        # Create or update the payment object
+        payment, created = Payment.objects.update_or_create(
+            transaction_id=order_id,
+            defaults={'status': status,
+                      'post': post, 
+                      'payer': payer,
+            }
+        )
 
+        if created:
+            message = 'Payment created successfully'
+        else:
+            message = 'Payment updated successfully'
 
-
+        return JsonResponse({'status': 'success', 'message': message})
 
 
 class postList(ListView):

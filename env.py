@@ -5,3 +5,6 @@ os.environ["SECRET_KEY"] = "django-insecure-c%dfexzokrt2*fl6i2axl#l+)kz(6#6vybp-
 os.environ['CLOUDINARY_URL'] = "cloudinary://899321527936993:0ZFa0w-_xYq05pR3hGcwkNimtTg@dqktndgd5"
 os.environ['CLICKSEND_USERNAME'] = "efrain19091@gmail.com"
 os.environ['CLICKSEND_API_KEY'] = "180189B0-2D4E-8334-688B-9ACC7E931D77"
+os.environ['CLOUD_NAME'] = "dqktndgd5"
+os.environ['CLOUD_API_KEY'] = "899321527936993"
+os.environ['CLOUD_API_SECRET'] = "0ZFa0w-_xYq05pR3hGcwkNimtTg"

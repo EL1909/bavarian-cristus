@@ -1,4 +1,5 @@
 {% load static %}
+{% csrf_token %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,6 +19,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <!-- Paypal SKD -->
+    <script src="https://www.paypal.com/sdk/js?client-id=ATQDgKmYhI7gtmB8gGQ1V8fPtN0Id2QRiAYTe8imoVL4vu-IfnCtZ9uzcHcruGNwvdCs1s3TbbPOUSjH&currency=EUR"></script>
     <title>Bavarian Cristus</title>
   </head>
   <body>
@@ -25,7 +28,7 @@
     <header class="container-fluid logo navbar navbar-expand-sm">
       <div class="container-fluid">
         <div class="navbar-brand">
-          <a class="navbar-brand" href="{% url 'home' %}">Bavarian Cristus</a>
+          <a class="navbar-brand" href="{% url 'home' %}"><h2>Bavarian Cristus</h2></a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>

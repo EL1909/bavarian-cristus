@@ -1,5 +1,5 @@
-<div class="col p-4">
-  <h2 class="display-5">Welcome</h2>
+<div class="col-12 col-md-6">
+  <h2 class="display-5 p-4">Welcome</h2>
   <div class="running-text">
       <p> My name is Luciano, i came to Bavaria for the first time in 2013.</p>
       <p> Since the beginning i noticed that there are Jesus crucified statues everywhere.</p>
@@ -8,6 +8,45 @@
       <p>Personally, i rather to look at him as a Friend, and not hanging from a cross, as a reminder to what happened to the last one that came around claiming to be a Messiah.</p>
       <p>You can create an acount and post your own photos, or share those already published by others.</p>
       <p>You can also send an image as an actual PostCard, and let someone enjoy a piece of the Bavarian Landscapes.</p>
+      <p>With your PostCard, you're supporting the author by paying for the image.</p>
+      <p>This website can be adapted for any other theme or topic of your interest, you can contact us for more information.</p>
       <p>Thank you for visiting my project, and please review our PostCard Gallery.</p>
+  </div>
+</div>
+<div class="col-12 col-md-6">
+  <div class="post-list-wrapper">
+      <div class="post-list-slider">
+          {% for imagepost in imagepost_list %}
+          <div class="post-list-slide {% if forloop.first %}active{% endif %} rounded mb-4 shadow-sm">
+              <div class="col-12">
+                  <div class="img-container">
+                      <a href="{% url 'post_detail' imagepost.slug %}">
+                          <img src="{{ imagepost.image.url }}" alt="{{ imagepost.title }}">
+                      </a>
+                  </div>
+              </div>
+              <hr>
+              <div id="post-list-title" class="col-12">
+                  <div class="row">
+                      <div class="col-5">
+                          <small><p>Author:</p></small>
+                          <a href="{% url 'author_profile' imagepost.author %}">
+                          <h4>{{ imagepost.author }}</h4>
+                          </a>
+                      </div>
+                      <div class="col-7 d-inline text-end">
+                          <small><p>Title:</p></small>
+                          <a href="{% url 'post_detail' imagepost.slug %}">
+                              <h4>{{ imagepost.title }}</h4>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+      <div>
+          <button id="postcard-gallery-btn">Post-Card Gallery</button>
+      </div>
   </div>
 </div>

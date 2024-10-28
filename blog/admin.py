@@ -1,6 +1,8 @@
 from django.contrib import admin
-from .models import ImagePost, Comment
+from .models import ImagePost, Comment, Payment
 from django_summernote.admin import SummernoteModelAdmin
+
+admin.site.register(Payment)
 
 
 @admin.register(ImagePost)

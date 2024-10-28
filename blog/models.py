@@ -6,7 +6,6 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class ImagePost(models.Model):
-
     title = models.CharField(max_length=200, unique=False)
     slug = models.SlugField(max_length=200, unique=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='uploaded_images')
@@ -30,7 +29,6 @@ class ImagePost(models.Model):
 
 
 class Comment(models.Model):
-
     text = models.TextField()
     image_post = models.ForeignKey(ImagePost, on_delete=models.CASCADE, related_name='comments')
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comments_made')
@@ -44,3 +42,12 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.text} by {self.name}"
+
+
+class Payment(models.Model):
+    transaction_id = models.CharField(max_length=255)
+    amount = models.DecimalField(max_digits=10, decimal_places=2, default=5.00)
+    status = models.CharField(max_length=50)
+    created_at = models.DateTimeField(auto_now_add=True)
+    post = models.ForeignKey(ImagePost, on_delete=models.CASCADE)
+    payer = models.CharField(max_length=100, null=True, blank=True)

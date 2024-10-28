@@ -64,7 +64,7 @@
             </div>
             <!-- Modal Trigger -->
             <div id="sendPostCard">
-                <a href="#" id="open-postcard-modal" class="open-modal" data-bs-toggle="modal" data-bs-target="#postcardModal" 
+                <a href="#" class="open-modal open-postcard-modal" data-bs-toggle="modal" data-bs-target="#postcardModal" 
                    data-title="{{ imagepost.title }}" 
                    data-slug="{{ imagepost.slug }}" 
                    data-image="{{ imagepost.image.url }}" 
@@ -79,45 +79,6 @@
 {% include "print-modal.html" %}
 <!-- About -->
 <div id="about" class="row">
-    <div class="col-12 col-md-6">
-        {% include 'about.html' %}
-    </div>
-    <div class="col-12 col-md-6">
-        <div class="post-list-wrapper">
-            <div class="post-list-slider">
-                {% for imagepost in imagepost_list %}
-                <div class="post-list-slide {% if forloop.first %}active{% endif %} rounded mb-4 shadow-sm">
-                    <div class="col-12">
-                        <div class="img-container">
-                            <a href="{% url 'post_detail' imagepost.slug %}">
-                                <img src="{{ imagepost.image.url }}" alt="{{ imagepost.title }}">
-                            </a>
-                        </div>
-                    </div>
-                    <hr>
-                    <div id="post-list-title" class="col-12">
-                        <div class="row">
-                            <div class="col-5">
-                                <small><p>Author:</p></small>
-                                <a href="{% url 'author_profile' imagepost.author %}">
-                                <h4>{{ imagepost.author }}</h4>
-                                </a>
-                            </div>
-                            <div class="col-7 d-inline text-end">
-                                <small><p>Title:</p></small>
-                                <a href="{% url 'post_detail' imagepost.slug %}">
-                                    <h4>{{ imagepost.title }}</h4>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-            <div>
-                <button id="postcard-gallery-btn">Post-Card Gallery</button>
-            </div>
-        </div>
-    </div>
+    {% include 'about.html' %}
 </div>
 {% endblock %}

@@ -1,199 +1,136 @@
+{% load static %}
 <!-- Modal -->
 <div class="modal fade" id="postcardModal" tabindex="-1" aria-labelledby="postcardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="postcardModalLabel"></h5>
+                <ul class="nav nav-tabs" id="print-card-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="front-tab" data-bs-toggle="tab" href="#print-image" role="tab" aria-controls="imageToPrint" aria-selected="true">Front</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="back-tab" data-bs-toggle="tab" href="#print-data" role="tab" aria-controls="dataToPrint" aria-selected="false">Back</a>
+                    </li>
+                </ul>
+                <h5 class="modal-title ms-auto" id="postcardModalLabel"></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <!-- Image Container -->
-                <div class="image-container">
-                    <img id="modalImage" src="" alt="" style="max-width: 100%;" />
-                </div>
-                <hr>
-                <!-- Button to open the cropping tool modal -->
-                <button id="open-crop-tool" type="button" class="btn btn-primary">
-                    Open Cropping Tool
-                </button>  
-                <!-- Rotate buttons -->
-                <button id="rotate-left" class="btn btn-secondary">Rotate Left</button>
-                <button id="rotate-right" class="btn btn-secondary">Rotate Right</button>
-                <!-- Button to crop and save the image -->
-                <button id="crop-button" class="btn btn-primary">Crop Image</button>
-                <hr>
-                <!-- Form Container -->
-                <div class="row">
-                    <div class="col-5 form-container">
-                        <input type="hidden" id="image_url" placeholder="Cleaned Image Url">
-                        <!-- Accordion -->
-                        <div class="row align-items-center text-end d-none d-sm-block">
-                            <div class="accordion" id="accordionSender">
-                                <!-- Sender Info -->
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSender" aria-expanded="true" aria-controls="collapseSender">
-                                            Sender Info (Optional)
-                                        </button>
-                                    </h3>
-                                    <div id="collapseSender" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionSender">
-                                        <div class="accordion-body">
-                                            <input type="text" id="from_name" placeholder="The name of the sender.">
-                                            <input type="text" id="from_street1" placeholder="The first line of the sender's address.">
-                                            <input type="text" id="from_street2" placeholder="The second line of the sender's address (Optional).">
-                                            <input type="text" id="from_city" placeholder="The city of the sender.">
-                                            <input type="text" id="from_state" placeholder="The state or region of the sender.">
-                                            <input type="text" id="from_postcode" placeholder="The postal code of the sender.">
-                                            <input type="text" id="from_country" placeholder="The country of the sender.">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Message -->
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMessage" aria-expanded="false" aria-controls="collapseMessage">
-                                            Message
-                                        </button>
-                                    </h3>
-                                    <div id="collapseMessage" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSender">
-                                        <div class="accordion-body">
-                                            <textarea id="message" rows="4" placeholder="The message to be printed on the postcard."></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div id="print-image">
+                    <!-- Image Container -->
+                    <div class="image-container">
+                        <img id="modalImage" src="" alt="" style="max-width: 100%;" />
+                    </div>
+                    <hr>
+                    <div>
+                        <!-- Button to open the cropping tool modal -->
+                        <button id="open-crop-tool" type="button" class="btn btn-primary">
+                            Open Cropping Tool
+                        </button>
+                        <div id="edit-buttons" style="display: none;">
+                            <!-- Button to edit crop and save the image -->
+                            <button id="rotate-left" class="btn btn-secondary">Rotate Left</button>
+                            <button id="rotate-right" class="btn btn-secondary">Rotate Right</button>
+                            <button id="crop-button" class="btn btn-primary">Crop Image</button>
                         </div>
                     </div>
-                    <div class="col-6 form-container">
-                        <!-- Accordion for Receiver Info -->
-                        <div class="row align-items-center text-end d-none d-sm-block">
-                            <div class="accordion" id="accordionReceiver">
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReceiver" aria-expanded="true" aria-controls="collapseReceiver">
-                                            Receiver Info
-                                        </button>
-                                    </h3>
-                                    <div id="collapseReceiver" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionReceiver">
-                                        <div class="accordion-body">
-                                            <input type="text" id="to_name" placeholder="Name of the recipient." required>
-                                            <input type="text" id="to_street1" placeholder="The first line of the recipient's address." required>
-                                            <input type="text" id="to_street2" placeholder="The second line of the recipient's address.">
-                                            <input type="text" id="to_city" placeholder="The city of the recipient." required>
-                                            <input type="text" id="to_state" placeholder="The state or region of the recipient" required>
-                                            <input type="text" id="to_postcode" placeholder="The postal code of the recipient" required>
-                                            <input type="text" id="to_country" placeholder="The country of the recipient" required>
+                </div>
+                <div id="print-data" style="display: none;">
+                    <!-- Form Container -->
+                    <div class="row">
+                        <div class="col-5 form-container">
+                            <input type="hidden" id="image_url" placeholder="Cleaned Image Url">
+                            <!-- Accordion -->
+                            <div class="row align-items-center text-end d-none d-sm-block">
+                                <div class="accordion" id="accordionSender">
+                                    <!-- Sender Info -->
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSender" aria-expanded="true" aria-controls="collapseSender">
+                                                Sender Info (Optional)
+                                            </button>
+                                        </h3>
+                                        <div id="collapseSender" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionSender">
+                                            <div class="accordion-body">
+                                                <input type="text" id="from_name" placeholder="The name of the sender.">
+                                                <input type="text" id="from_street1" placeholder="The first line of the sender's address.">
+                                                <input type="text" id="from_street2" placeholder="The second line of the sender's address (Optional).">
+                                                <input type="text" id="from_city" placeholder="The city of the sender.">
+                                                <input type="text" id="from_state" placeholder="The state or region of the sender.">
+                                                <input type="text" id="from_postcode" placeholder="The postal code of the sender.">
+                                                <input type="text" id="from_country" placeholder="The country of the sender.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Message -->
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMessage" aria-expanded="false" aria-controls="collapseMessage">
+                                                Message
+                                            </button>
+                                        </h3>
+                                        <div id="collapseMessage" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSender">
+                                            <div class="accordion-body">
+                                                <textarea id="message" rows="4" placeholder="The message to be printed on the postcard."></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Accordion for Payment Info -->
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePayment" aria-expanded="true" aria-controls="collapsePayment">
-                                    Payment Info
-                                </button>
-                            </h3>
-                            <div id="collapsePayment" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionReceiver">
-                                <div class="accordion-body">
-                                    <p>Total: 5 euro</p>
-                                    <small><p>Printing service provider: 2,7 euro</p></small>
-                                    <small><p>Image's author: 1 euro</p></small>
-                                    <small><p>Platform's fee: 0,6 euro</p></small>
-                                    <small><p>Taxes: 0,7 euro</p></small>
+                        <div class="col-6 form-container">
+                            <!-- Accordion for Receiver Info -->
+                            <div class="row align-items-center text-end d-none d-sm-block">
+                                <div class="accordion" id="accordionReceiver">
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReceiver" aria-expanded="true" aria-controls="collapseReceiver">
+                                                Receiver Info
+                                            </button>
+                                        </h3>
+                                        <div id="collapseReceiver" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionReceiver">
+                                            <div class="accordion-body">
+                                                <input type="text" id="to_name" placeholder="Name of the recipient." required>
+                                                <input type="text" id="to_street1" placeholder="The first line of the recipient's address." required>
+                                                <input type="text" id="to_street2" placeholder="The second line of the recipient's address.">
+                                                <input type="text" id="to_city" placeholder="The city of the recipient." required>
+                                                <input type="text" id="to_state" placeholder="The state or region of the recipient" required>
+                                                <input type="text" id="to_postcode" placeholder="The postal code of the recipient" required>
+                                                <input type="text" id="to_country" placeholder="The country of the recipient" required>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>                    
+                            <!-- Accordion for Payment Info -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePayment" aria-expanded="true" aria-controls="collapsePayment">
+                                        Payment Info
+                                    </button>
+                                </h3>
+                                <div id="collapsePayment" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionReceiver">
+                                    <div class="accordion-body p-4">
+                                        <p>Total: 5 euro</p>
+                                        <small><p>Printing service provider: 2,7 euro</p></small>
+                                        <small><p>Image's author: 1 euro</p></small>
+                                        <small><p>Platform's fee: 0,6 euro</p></small>
+                                        <small><p>Taxes: 0,7 euro</p></small>
+                                    </div>
+                                    <div id="paypal-button-container" class="p-4"></div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" id="sendPostcardBtn">Send Postcard</button>
+                <button type="button" class="btn btn-secondary" data-slug="{{ item.slug }}" id="sendPostcardBtn">Send Postcard</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
-
-<script>
-$(document).ready(function() {
-    let cropper;
-
-    // Open the cropping tool
-    $('#open-crop-tool').on('click', function() {
-        const image = document.getElementById('modalImage');
-        cropper = new Cropper(image, {
-            aspectRatio: 1.5, // Adjust the aspect ratio to match postcard dimensions
-            viewMode: 1,      // Restrict the crop box to stay within the image
-        });
-    });
-
-    // Destroy Cropper when modal is hidden
-    $('#postcardModal').on('hidden.bs.modal', function () {
-        cropper.destroy();
-        cropper = null;
-    });
-
-    // Rotate left
-    $('#rotate-left').on('click', function() {
-            cropper.rotate(-90); // Rotate 90 degrees counter-clockwise
-        });
-
-    // Rotate right
-    $('#rotate-right').on('click', function() {
-        cropper.rotate(90); // Rotate 90 degrees clockwise
-    });
-
-    // Handle crop and set the cropped image
-    $('#crop-button').on('click', function() {
-        if (cropper) {
-            const croppedCanvas = cropper.getCroppedCanvas();
-            const croppedImage = croppedCanvas.toDataURL(); // Get cropped image as base64
-
-            // Replace the original image with the cropped image
-            $('#modalImage').attr('src', croppedImage);
-
-            // Set the cropped image in a hidden input or form field
-            $('#image_url').val(croppedImage);
-
-            // Destroy the cropper instance if you want to reset it for the next crop
-            cropper.destroy();
-            cropper = null;
-        }
-    });
-
-});
-</script>
+<script src="{% static 'js/postcard-print-modal.js' %}"></script>
 
 
-
-
-<!-- <script>
-function setImageUrl(url, slug) {
-    document.getElementById('imageUrl' + slug).value = url; // Set the hidden input value correctly
-}
-
-// Handle the send postcard button click
-document.querySelectorAll('[id^="sendPostcardBtn"]').forEach(button => {
-    button.onclick = function() {
-        const slug = this.dataset.slug; // Get the slug from the data attribute
-        const formData = new FormData(document.getElementById('postcardForm' + slug));
-
-        fetch("{% url 'send_postcard' 'slug_placeholder' %}".replace('slug_placeholder', slug), {
-            method: "POST",
-            body: formData,
-            headers: {'X-CSRFToken': '{{ csrf_token }}'}
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.status === 'success') {
-                alert('Postcard sent!');
-                $('#postcardModal' + slug).modal('hide'); // Close the modal
-            } else {
-                alert('Error sending postcard.');
-            }
-        });
-    };
-});
-</script> -->
